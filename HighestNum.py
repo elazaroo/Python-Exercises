@@ -1,4 +1,5 @@
-print("MaxNum")
+print("Highest number with functions")
+print("------------------------------")
 
 def compare():
     numbers = []
