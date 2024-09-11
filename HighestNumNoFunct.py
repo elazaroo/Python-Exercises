@@ -12,6 +12,7 @@ for x in range(3):
             break
         else:
             print("Please enter a valid number.")
+            
 if i[0] == i[1] == i[2]:
     print("All numbers are equal.")
 else:
