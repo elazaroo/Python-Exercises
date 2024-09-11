@@ -1,16 +1,20 @@
 print("MaxNum")
 
 def compare():
-    max_num = None
+    numbers = []
     for x in range(3):
         while True:
             try:
                 choice = int(input("Insert one number: "))
-                if max_num is None or choice > max_num:
-                    max_num = choice
+                numbers.append(choice)
                 break
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
-    print("The max num is: ", max_num)
+    
+    if numbers[0] == numbers[1] == numbers[2]:
+        print("All numbers are equal.")
+    else:
+        max_num = max(numbers)
+        print("The max num is: ", max_num)
 
 compare()
